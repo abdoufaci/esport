@@ -1,0 +1,109 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/esport.css" />
+    <link rel="icon" href="./img/e-sport results.jpg">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+    rel="stylesheet"
+    />
+    <title>Esports</title>
+  </head>
+  <body>
+    <main>
+      <section class="landing">
+        <header>
+          <nav>
+              <h1 id="logo"><a href="/">Esports</a></h1>
+              <ul class="nav-links">
+                <li><a href="#own">Creators</a></li>
+                <li><a href="#about">content</a></li>
+                <li><a href="#content">Video</a></li>
+              </ul>
+              <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav-open">
+              <ul class="nav-links-open">
+                <li><a href="#own" class="a">Creators</a></li>
+                <li><a href="#about" class="b">content</a></li>
+                <li><a href="#content" class="c">Video</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <h1 class="big-text">Esports</h1>
+      </section>
+    </main>
+    <div class="intro">
+      <div class="intro-text">
+        <h1 class="hide">
+          <span class="text">Esopts</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">Are</span>
+        </h1>
+        <h1 class="hide">
+          <span class="text">The Future</span>
+        </h1>
+      </div>
+    </div>
+    <section id="own" class="owners">
+      <h1 class="creators-h1">Creators</h1>
+      <div class="creators">
+      <div class="djihad">
+        <img src="./static/css/img/djihad.jpg" class="djihad-pic"></img>
+        <h3>Derbal Djihad</h3>
+      </div>
+      <div class="mazigh">
+        <img src="./static/css/img/mazigh.jpg" class="mazigh-pic"></img>
+        <h3>Amazigh Chewki</h3>
+      </div>
+    </div>
+    </section>
+    <section id="about" class="about">
+      <h1 class="creators-h1">The Content</h1>
+      <div class="defenition">
+        <div class="write">
+          <h1>Defintion</h1>
+          <p>what is the IESF?</p>
+        </div>
+        <img src="{% static 'css/img/esf.png' %}">
+      </div>
+      <div class="history">
+        <img src="./static/css/img/history.jpg">
+        <div class="history2">
+          <h1>History</h1>
+          <p>what is its history ?</p>
+        </div>
+      </div>
+      <div class="results">
+        <div class="write2">
+          <h1>Changes</h1>
+          <p>what is the changes it has made in the world of esports ?</p>
+        </div>
+        <img src="./static/css/img/e-sport results.jpg">
+      </div>
+    </section>
+    <section id="content" class="content">
+      <h1 class="creators-h1">Watch This</h1>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XIlE3PBfLKQ" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+      </div>
+    </section>
+    <div class="slider"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./static/css/esport.js"></script>
+  </body>
+</html>
